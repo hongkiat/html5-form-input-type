@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML5 Form - Hongkiat.com</title>
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>
+		$(function(){
+			//Range
+			var val 	= $('#slider').val();
+				output 	= $('#output');
+
+			output.html(val);
+
+			$('#slider').on('change', function(){
+			    output.html(this.value);
+			});
+		});
+	</script>
+  </script>
+</head>
+<body>
+<section id="forms">
+	<h3>Range</h3>
+	<form action="range_form" method="get" accept-charset="utf-8" class="cf">
+		<div class="horizontal cf">
+		<h4>Horizontal Slider</h4>
+			<label for="range">Range</label> <input type="range" id="slider" value="10" name="range"> <div id="output"></div>
+		</div>
+		<div class="cf">
+		<h4>Vertical Slider</h4>
+			<input type="range" class="vertical" value="10" name="range">
+		</div>
+	</form>
+</section>
+</body>
+</html>

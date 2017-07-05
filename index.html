@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>
+HTML5 Form Input Types - Hongkiat.com
+</title>
+
+<!--  jquery -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../_nav/js/jquery.js"><\/script>')</script>
+
+<!-- demo scripts -->
+<link rel="stylesheet" href="style.css">
+
+<script>
+	$(function(){
+		//Color
+		var color 	 = $('#colorpicker').val();
+			hexcolor = $('#hexcolor');
+
+		hexcolor.html(color);
+
+		$('#colorpicker').on('change', function() {
+		    hexcolor.html(this.value);
+		});
+		//Range
+		var val 	= $('#slider').val();
+			output 	= $('#output');
+
+		output.html(val);
+
+		$('#slider').on('change', function(){
+		    output.html(this.value);
+		});
+	});
+</script>
+
+<!-- nav script -->
+<script src="../_nav/js/nav.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<!-- nav meta -->
+<div class="demo-meta">
+  <h1 class="demo-title">HTML5 Form Input Types</h1>
+  <p class="demo-desc">Enrich your online form with these new HTML5 input types: Date, Color Picker, Range, and Slider. This demo shows you how to utilize them.</p>
+</div>
+
+<!-- demo content -->
+<div class="demo-wrapper">
+	<form action="date_form" method="get" accept-charset="utf-8" class="cf">
+	<h4>Date and Time</h4>
+		<label for="date">Date</label> <input type="date" name="date">
+		<label for="month">Month</label> <input type="month" name="month">
+		<label for="week">Week</label> <input type="week" name="week">
+		<label for="time">time</label> <input type="time" name="time">
+		<label for="datetime">Datetime</label> <input type="datetime" name="datetime">
+		<label for="datetimelocal">Date Time Local</label> <input type="datetime-local" name="datetimelocal">
+	<h4>Color Picker</h4>
+		<label for="color">Color</label> <input type="color" id="colorpicker" name="color" value="#ff0000"> <div id="hexcolor"></div>
+	<h4 style="margin-bottom: 0;">Range</h4>
+		<div class="horizontal cf">
+		<h5>Horizontal Slider</h5>
+			<label for="range">Range</label> <input type="range" id="slider" value="10" name="range"> <div id="output"></div>
+		</div>
+		<div class="cf">
+		<h5>Vertical Slider</h5>
+			<input type="range" class="vertical" value="10" name="range">
+		</div>
+	</form>
+</div>
+
+</body>
+</html>

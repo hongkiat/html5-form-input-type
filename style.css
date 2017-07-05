@@ -1,0 +1,80 @@
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
+html {
+	background-color: #eaeaea;
+}
+.demo-wrapper h3 {
+	width: 370px; 
+	clear: both;
+	padding: 25px;
+	background-color: #000;
+	color: #fff;
+	margin: 0;
+}
+.demo-wrapper h4	{
+	width: 100%;
+	clear: both;
+}
+.demo-wrapper label {
+	display: inline-block;
+	font-size: 10pt;
+	width: 110px;
+	margin-top: 5px;
+	float: left;
+}
+.demo-wrapper {
+	width: 420px;
+	margin: 50px auto;
+	overflow: hidden;
+	border-radius: 5px;
+}
+.demo-wrapper form {
+	padding: 25px;
+	background-color: #ddd;
+}
+.demo-wrapper input {
+	border: 1px solid #ccc;
+	background: #fff;
+	width: 180px;
+	margin-bottom: 10px;
+}
+.demo-wrapper input[type=color] {
+	width: 50px;
+	float: left;
+}
+.demo-wrapper input[type=range] {
+	float: left;
+}
+.demo-wrapper input.vertical {
+	clear: both;
+	width: 20px;
+	height: 200px;
+	-webkit-appearance: slider-vertical;
+}
+#hexcolor {
+	width: 90px;
+	background-color: rgb(255,255,255);
+	padding: 5px;
+	font-size: 10pt;
+	border: 1px solid #ccc;
+	float: left;
+	margin-left: 10px;	
+}
+#output {
+	width: 50px;
+	padding: 5px;
+	font-size: 10pt;
+	border: 1px solid #ccc;
+	background-color: rgb(255,255,255);
+	float: left;
+	margin-left: 10px;
+}
